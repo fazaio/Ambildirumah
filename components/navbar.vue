@@ -1,13 +1,15 @@
 <template>
-  <div class="container">
-    <div class="nav">
-      <div class="logo">Logos</div>
-      <div class="menu">
-        <ul>
-          <li>
-            <a href="#">Login</a>
-          </li>
-        </ul>
+  <div class="bgc">
+    <div class="container">
+      <div class="nav">
+        <div class="logo">Ambildirumah.com</div>
+        <div class="menu">
+          <ul>
+            <li>
+              <a href="#">Login</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
@@ -19,13 +21,16 @@ export default {
 }
 </script>
 <style scoped>
+.bgc {
+  background-color: #fe5719;
+  color: white;
+}
 .logo {
   float: left;
   padding: 14px 16px;
 }
 .menu {
   float: right;
-  color: #888;
 }
 .nav {
   display: block;
@@ -45,6 +50,6 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  color: #888;
+  color: white;
 }
 </style>

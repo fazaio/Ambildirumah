@@ -16,7 +16,7 @@
     <div class="carousel">
       <img class="image" src="https://picsum.photos/seed/picsum/1080/600" alt />
       <div class="carousel-tag">
-        <h1>testing</h1>
+        <h1 style="color: #fe5719;">Some content</h1>
       </div>
     </div>
     <div class="container" style="margin-top: 100px; margin-bottom: 100px;">
@@ -29,22 +29,34 @@
             <div class="address">JL Peleabuhan Bakayaro</div>
           </div>
         </div>
-        <div class="card">tes</div>
-        <div class="card">tes</div>
+        <div class="card">
+          <img src="https://picsum.photos/id/237/150/150" alt />
+          <div class="info">
+            <div class="tittle">Nasi Goreng</div>
+            <div class="qty">Jumlah: 14</div>
+            <div class="address">
+              <i class="fas fa-map-marker-alt"></i> JL Peleabuhan Bakayaro
+            </div>
+            <div class="footer">Selengkapnya</div>
+          </div>
+        </div>
       </div>
     </div>
+    <foot />
   </div>
 </template>
 
 <script>
 import Navbar from '@/components/navbar'
 import { Glide, GlideSlide } from 'vue-glide-js'
+import foot from '@/components/foot'
 
 export default {
   components: {
     Navbar,
     [Glide.name]: Glide,
-    [GlideSlide.name]: GlideSlide
+    [GlideSlide.name]: GlideSlide,
+    foot
   }
 }
 </script>
@@ -55,7 +67,7 @@ export default {
   padding: 0;
 }
 body {
-  background-color: #eee;
+  background-color: #fefefe;
 }
 .container {
   width: 80%;
@@ -99,13 +111,15 @@ body {
 
 .card > img {
   border-radius: 5px;
+  z-index: 1;
+  background-color: #ffe3c7;
 }
 .card > .info {
   padding: 10px;
   position: relative;
 }
 .card > .info > .tittle {
-  color: #555;
+  color: #444;
   font-size: 15px;
   font-weight: bold;
 }
@@ -114,10 +128,22 @@ body {
   font-size: 13px;
 }
 .card > .info > .address {
-  position: absolute;
-  padding: 15px 0px;
+  /* position: absolute; */
+  padding: 5px 0px;
   font-size: 14px;
+  /* bottom: 0px; */
+}
+.card > .info > .footer {
+  position: absolute;
   bottom: 0px;
+  left: 0px;
+  right: 0px;
+  padding: 10px 0px;
+  text-align: center;
+  font-size: 12px;
+  border-bottom-right-radius: 5px;
+  border-top: 1px solid #fefefe;
+  background-color: #ffe3c7;
 }
 
 /* coloumn css */
