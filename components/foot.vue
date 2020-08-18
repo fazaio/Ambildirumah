@@ -20,7 +20,7 @@ export default {}
 <style scoped>
 footer {
   padding: 5px 0px;
-  background-color: orangered;
+  background-color: darkorange;
 }
 .container {
   text-align: right;

@@ -6,7 +6,10 @@
         <div class="menu">
           <ul>
             <li>
-              <a href="#">Login</a>
+              <nuxt-link to="/user/login">
+                <i class="light-color fas fa-user-circle"></i>
+                Login
+              </nuxt-link>
             </li>
           </ul>
         </div>
@@ -22,7 +25,7 @@ export default {
 </script>
 <style scoped>
 .bgc {
-  background-color: #fe5719;
+  background-color: darkorange;
   color: white;
 }
 .logo {

@@ -1,18 +1,6 @@
 <template>
   <div>
     <Navbar />
-    <!-- <vue-glide :perView="1">
-      <vue-glide-slide>
-        <div class="carousel">
-          <img src="https://picsum.photos/seed/picsum/1080/600" alt />
-          <div class="carousel-tag">
-            <div class="search">
-              <input type="text" />
-            </div>
-          </div>
-        </div>
-      </vue-glide-slide>
-    </vue-glide>-->
     <div class="carousel">
       <img class="image" src="https://picsum.photos/seed/picsum/1080/600" alt />
       <div class="carousel-tag">
@@ -26,7 +14,16 @@
           <div class="info">
             <div class="tittle">Nasi Goreng</div>
             <div class="qty">Jumlah: 14</div>
-            <div class="address">JL Peleabuhan Bakayaro</div>
+            <div class="address">
+              <i class="fas fa-map-marker-alt orange"></i>
+              JL Pelabuhan Bakayaro ketapang, Malang
+            </div>
+            <div class="footer">
+              <button class="btn">
+                Ambil
+                <i class="fas fa-chevron-circle-right light-orange"></i>
+              </button>
+            </div>
           </div>
         </div>
         <div class="card">
@@ -35,9 +32,49 @@
             <div class="tittle">Nasi Goreng</div>
             <div class="qty">Jumlah: 14</div>
             <div class="address">
-              <i class="fas fa-map-marker-alt"></i> JL Peleabuhan Bakayaro
+              <i class="fas fa-map-marker-alt orange"></i>
+              JL Pelabuhan Bakayaro ketapang, Malang
             </div>
-            <div class="footer">Selengkapnya</div>
+            <div class="footer">
+              <button class="btn">
+                Ambil
+                <i class="fas fa-chevron-circle-right light-orange"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://picsum.photos/id/237/150/150" alt />
+          <div class="info">
+            <div class="tittle">Nasi Goreng</div>
+            <div class="qty">Jumlah: 14</div>
+            <div class="address">
+              <i class="fas fa-map-marker-alt orange"></i>
+              JL Pelabuhan Bakayaro ketapang, Malang
+            </div>
+            <div class="footer">
+              <button class="btn">
+                Ambil
+                <i class="fas fa-chevron-circle-right light-orange"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://picsum.photos/id/237/150/150" alt />
+          <div class="info">
+            <div class="tittle">Nasi Goreng</div>
+            <div class="qty">Jumlah: 14</div>
+            <div class="address">
+              <i class="fas fa-map-marker-alt orange"></i>
+              JL Pelabuhan Bakayaro ketapang, Malang
+            </div>
+            <div class="footer">
+              <button class="btn">
+                Ambil
+                <i class="fas fa-chevron-circle-right light-orange"></i>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -69,11 +106,7 @@ export default {
 body {
   background-color: #fefefe;
 }
-.container {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 .image {
   width: 100%;
   height: 350px;
@@ -110,7 +143,8 @@ body {
 }
 
 .card > img {
-  border-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
   z-index: 1;
   background-color: #ffe3c7;
 }
@@ -130,20 +164,17 @@ body {
 .card > .info > .address {
   /* position: absolute; */
   padding: 5px 0px;
-  font-size: 14px;
+  font-size: 12px;
   /* bottom: 0px; */
 }
 .card > .info > .footer {
   position: absolute;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  padding: 10px 0px;
-  text-align: center;
-  font-size: 12px;
+  bottom: 6px;
+  right: 6px;
+  /* padding: 10px 0px; */
+  text-align: right;
+  font-size: 13px;
   border-bottom-right-radius: 5px;
-  border-top: 1px solid #fefefe;
-  background-color: #ffe3c7;
 }
 
 /* coloumn css */

@@ -1,0 +1,26 @@
+/* color */
+.orange {
+  color: darkorange;
+}
+.light-orange {
+  color: #ffe4bd;
+}
+
+.container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* button */
+.btn {
+  padding: 5px;
+  background-color: darkorange;
+  color: #fefefe;
+  display: inline;
+  border-radius: 3px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+}
