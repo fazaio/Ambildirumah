@@ -98,15 +98,6 @@ export default {
 }
 </script>
 <style>
-* {
-  font-family: 'Roboto';
-  margin: 0;
-  padding: 0;
-}
-body {
-  background-color: #fefefe;
-}
-
 .image {
   width: 100%;
   height: 350px;
