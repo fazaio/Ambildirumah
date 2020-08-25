@@ -14,12 +14,6 @@ body {
   color: #ffe4bd !important;
 }
 
-.container {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 /* button */
 .btn {
   padding: 5px;
@@ -39,4 +33,48 @@ input {
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
+}
+
+/* rules media responsive */
+@media (min-width: 1281px) {
+  .container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .container {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

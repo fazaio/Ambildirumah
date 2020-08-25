@@ -14,66 +14,9 @@
           <div class="info">
             <div class="tittle">Nasi Goreng</div>
             <div class="qty">Jumlah: 14</div>
-            <div class="address">
-              <i class="fas fa-map-marker-alt orange"></i>
-              JL Pelabuhan Bakayaro ketapang, Malang
-            </div>
+            <div class="address">JL Pelabuhan Bakayaro ketapanga, Malang</div>
             <div class="footer">
-              <button class="btn">
-                Ambil
-                <i class="fas fa-chevron-circle-right light-orange"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <img src="https://picsum.photos/id/237/150/150" alt />
-          <div class="info">
-            <div class="tittle">Nasi Goreng</div>
-            <div class="qty">Jumlah: 14</div>
-            <div class="address">
-              <i class="fas fa-map-marker-alt orange"></i>
-              JL Pelabuhan Bakayaro ketapang, Malang
-            </div>
-            <div class="footer">
-              <button class="btn">
-                Ambil
-                <i class="fas fa-chevron-circle-right light-orange"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <img src="https://picsum.photos/id/237/150/150" alt />
-          <div class="info">
-            <div class="tittle">Nasi Goreng</div>
-            <div class="qty">Jumlah: 14</div>
-            <div class="address">
-              <i class="fas fa-map-marker-alt orange"></i>
-              JL Pelabuhan Bakayaro ketapang, Malang
-            </div>
-            <div class="footer">
-              <button class="btn">
-                Ambil
-                <i class="fas fa-chevron-circle-right light-orange"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <img src="https://picsum.photos/id/237/150/150" alt />
-          <div class="info">
-            <div class="tittle">Nasi Goreng</div>
-            <div class="qty">Jumlah: 14</div>
-            <div class="address">
-              <i class="fas fa-map-marker-alt orange"></i>
-              JL Pelabuhan Bakayaro ketapang, Malang
-            </div>
-            <div class="footer">
-              <button class="btn">
-                Ambil
-                <i class="fas fa-chevron-circle-right light-orange"></i>
-              </button>
+              <button class="btn">Ambil</button>
             </div>
           </div>
         </div>

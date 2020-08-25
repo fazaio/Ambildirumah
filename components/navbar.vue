@@ -7,7 +7,6 @@
           <ul>
             <li>
               <nuxt-link to="/user/login">
-                <i class="light-color fas fa-user-circle"></i>
                 Login
               </nuxt-link>
             </li>
