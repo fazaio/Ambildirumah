@@ -61,7 +61,8 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt/content
-    '@nuxt/content'
+    '@nuxt/content',
+    'nuxt-fontawesome'
   ],
   /*
    ** Axios module configuration

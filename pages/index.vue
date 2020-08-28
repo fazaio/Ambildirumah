@@ -7,8 +7,70 @@
         <h1 style="color: #fe5719;">Some content</h1>
       </div>
     </div>
-    <div class="container" style="margin-top: 100px; margin-bottom: 100px;">
-      <div class="row">
+    <div class="container">
+      <div class="find">
+        <input type="text" placeholder="Cari " />
+      </div>
+      <div class="tittle">
+        Kategori
+      </div>
+      <div class="category">
+        <div>
+          <div class="flex-btn">
+            <div class="left">Makanan</div>
+            <div class="right">></div>
+          </div>
+        </div>
+        <div>
+          <div class="flex-btn">
+            <div class="left">Fashion</div>
+            <div class="right">></div>
+          </div>
+        </div>
+        <div>
+          <div class="flex-btn">
+            <div class="left">Elektronik</div>
+            <div class="right">></div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="slide">
+        <vue-glide>
+          <vue-glide-slide>
+            <div class="slide-content">
+              <img src="https://picsum.photos/id/237/500/800" alt />
+              <div class="tag">
+                <h3>Nasi Kotak</h3>
+              </div>
+            </div>
+          </vue-glide-slide>
+          <vue-glide-slide>
+            <div class="slide-content">
+              <img src="https://picsum.photos/id/237/500/500" alt />
+            </div>
+          </vue-glide-slide>
+          <vue-glide-slide>
+            <div class="slide-content">
+              <img src="https://picsum.photos/id/237/500/500" alt />
+            </div>
+          </vue-glide-slide>
+        </vue-glide>
+      </div>-->
+      <div class="tittle">
+        Derma Terbaru
+      </div>
+      <div class="row responsive">
+        <div class="card">
+          <img src="https://picsum.photos/id/237/150/150" alt />
+          <div class="info">
+            <div class="tittle">Nasi Goreng</div>
+            <div class="qty">Jumlah: 14</div>
+            <div class="address">JL Pelabuhan Bakayaro ketapanga, Malang</div>
+            <div class="footer">
+              <button class="btn">Ambil</button>
+            </div>
+          </div>
+        </div>
         <div class="card">
           <img src="https://picsum.photos/id/237/150/150" alt />
           <div class="info">
@@ -41,14 +103,18 @@ export default {
 }
 </script>
 <style>
+.padding {
+  padding: 10px;
+  background-color: salmon;
+}
 .image {
   width: 100%;
   height: 350px;
 }
 .carousel {
   width: 100%;
-  /* height: 500px; */
   position: relative;
+  z-index: -1;
 }
 .carousel-tag {
   position: absolute;
@@ -66,7 +132,7 @@ export default {
 /* card css */
 .card {
   padding: 0px;
-  margin: 0px;
+  margin: 10px 0px;
   background-color: #fff;
   color: #888;
   box-shadow: 0 10px 40px -10px rgba(0, 64, 128, 0.2);
@@ -116,6 +182,58 @@ export default {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 20px;
-  grid-row-gap: 50px;
+  grid-row-gap: 20px;
+  margin-bottom: 200px;
+}
+.find {
+  padding: 30px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  color: #888;
+  margin-top: -50px;
+  background-color: #fff;
+  box-shadow: 0 10px 40px -10px rgba(0, 64, 128, 0.2);
+}
+.find > input {
+  width: 100%;
+  /* border: none; */
+}
+.category {
+  display: flex;
+  margin: 0 -10px 80px -10px;
+}
+.category > div {
+  margin: 0px 10px;
+}
+.flex-btn {
+  display: inline-flex;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+.flex-btn > .left {
+  text-align: center;
+  /* width: 80px; */
+  padding: 15px 25px;
+  background-color: #ffae46;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: white;
+}
+.flex-btn > .right {
+  padding: 15px;
+  background-color: darkorange;
+  color: white;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.left:hover {
+  background-color: darkorange;
+  transition-duration: 1s;
+}
+.tittle {
+  color: #666;
+  margin: 50px 0px 10px 0px;
+  font-size: 12px;
 }
 </style>
