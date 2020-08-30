@@ -231,9 +231,9 @@ export default {
   background-color: darkorange;
   transition-duration: 1s;
 }
-.tittle {
+/* .tittle {
   color: #666;
   margin: 50px 0px 10px 0px;
   font-size: 12px;
-}
+} */
 </style>
