@@ -2,12 +2,12 @@
   <footer>
     <div class="container">
       <div class="contact">
-        <div class="left">
+        <div class="left hide">
           <div>Beranda</div>
           <div>Tentang</div>
           <div>Kontak</div>
         </div>
-        <div class="right">support@ambildirumah.com</div>
+        <div class="right">support@ambildirumah.com | 2020</div>
       </div>
     </div>
   </footer>

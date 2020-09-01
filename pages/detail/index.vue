@@ -5,6 +5,7 @@
     <div class="container detail-grid">
       <header>niceone</header>
       <aside>
+        <span>Penderma: @fazaio</span>
         <h1>Nasi uduk</h1>
         <div class="location">
           <div>JL Pelabuhan Bakahuni no 53, Malang</div>
@@ -80,6 +81,11 @@ aside {
   padding: 20px;
   color: #666;
 }
+aside > span {
+  font-size: 12px;
+  color: #666;
+  padding: 10px;
+}
 aside > h1 {
   padding: 10px;
 }
@@ -89,7 +95,7 @@ aside > .location {
 }
 aside > .qty {
   padding: 10px;
-  font-size: 12px;
+  font-size: 14px;
 }
 aside > .button {
   padding: 10px;

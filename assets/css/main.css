@@ -73,6 +73,9 @@ input {
   .responsive {
     grid-template-columns: 1fr !important;
   }
+  .hide {
+    display: none !important;
+  }
 }
 @media (min-width: 320px) and (max-width: 480px) {
   .container {
@@ -82,5 +85,8 @@ input {
   }
   .responsive {
     grid-template-columns: 1fr !important;
+  }
+  .hide {
+    display: none !important;
   }
 }

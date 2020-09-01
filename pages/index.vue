@@ -44,10 +44,14 @@
         <div class="card">
           <img src="https://picsum.photos/id/237/150/150" alt />
           <div class="info">
+            <span> <font-awesome-icon icon="user" /> @fazaio </span>
             <div class="tittle">Nasi Goreng</div>
             <div class="qty">Jumlah: 14</div>
             <div class="address">JL Pelabuhan Bakayaro ketapanga, Malang</div>
             <div class="footer">
+              <button class="btn">
+                <font-awesome-icon :icon="['far', 'heart']" />
+              </button>
               <button class="btn">Ambil</button>
             </div>
           </div>
@@ -55,10 +59,14 @@
         <div class="card">
           <img src="https://picsum.photos/id/237/150/150" alt />
           <div class="info">
+            <span> <font-awesome-icon icon="user" /> @fazaio </span>
             <div class="tittle">Nasi Goreng</div>
             <div class="qty">Jumlah: 14</div>
             <div class="address">JL Pelabuhan Bakayaro ketapanga, Malang</div>
             <div class="footer">
+              <button class="btn">
+                <font-awesome-icon :icon="['far', 'heart']" />
+              </button>
               <button class="btn">Ambil</button>
             </div>
           </div>
@@ -152,6 +160,11 @@ export default {
   padding: 10px;
   position: relative;
 }
+.card > .info > span {
+  position: absolute;
+  bottom: 6px;
+  font-size: 12px;
+}
 .card > .info > .tittle {
   color: #444;
   font-size: 15px;
@@ -175,6 +188,11 @@ export default {
   text-align: right;
   font-size: 13px;
   border-bottom-right-radius: 5px;
+}
+
+.card > .info > .footer > :first-child {
+  background-color: #fff;
+  color: darkorange;
 }
 
 /* coloumn css */
