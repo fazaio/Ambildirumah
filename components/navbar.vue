@@ -7,7 +7,7 @@
           <ul>
             <li>
               <nuxt-link to="/user/login">
-                Login
+                <font-awesome-icon icon="people-carry" /> Login
               </nuxt-link>
             </li>
           </ul>
