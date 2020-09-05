@@ -73,6 +73,9 @@ input {
   .responsive {
     grid-template-columns: 1fr !important;
   }
+  .responsive-display-block {
+    display: block !important;
+  }
   .hide {
     display: none !important;
   }
@@ -85,6 +88,9 @@ input {
   }
   .responsive {
     grid-template-columns: 1fr !important;
+  }
+  .responsive-display-block {
+    display: block !important;
   }
   .hide {
     display: none !important;

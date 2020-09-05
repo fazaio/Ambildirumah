@@ -2,8 +2,16 @@
 <template>
   <div>
     <Navbar />
-    <div class="container detail-grid">
-      <header>niceone</header>
+    <div class="container detail-grid responsive-display-block">
+      <header>
+        <img
+          src="https://images.pexels.com/photos/2872755/pexels-photo-2872755.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
+          alt="pic"
+        />
+        <div class="status">
+          Tersedia
+        </div>
+      </header>
       <aside>
         <span>Penderma: @fazaio</span>
         <h1>Nasi uduk</h1>
@@ -71,9 +79,25 @@ export default {
 }
 header {
   grid-area: h;
+  height: 400px;
+  background-color: salmon;
+  position: relative;
+}
+header > img {
+  grid-area: h;
   width: 100%;
   height: 400px;
   background-color: salmon;
+}
+header > .status {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 10px 15px;
+  background-color: orangered;
+  opacity: 0.6;
+  margin: 5px;
+  font-size: 12px;
 }
 
 aside {

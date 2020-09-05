@@ -23,7 +23,7 @@
       <div class="container">
         <div class="nav">
           <div class="logo">Ambildirumah.com</div>
-          <div class="menu">login</div>
+          <nuxt-link to="/users"><div class="menu">login</div></nuxt-link>
         </div>
       </div>
     </div>
@@ -70,6 +70,8 @@ export default {
 .menu {
   float: right;
   padding: 18px 16px;
+  text-decoration: none;
+  color: white;
 }
 .nav {
   display: block;
