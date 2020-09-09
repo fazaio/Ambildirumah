@@ -11,20 +11,17 @@
             />
           </div>
           <div class="profile">
-            <h4>Reni styanti</h4>
+            <h4>Admin</h4>
             <span>08993774262</span>
           </div>
-          <a href="#">Beranda</a>
-          <a href="#">Profil</a>
-          <a href="#">Derma</a>
-          <a href="#">Riwayat</a>
+          <a href="#">Dashboard</a>
+          <a href="#">User Options</a>
+          <a href="#">User Activity</a>
           <div style="text-align: center;">
             <a href="#">Logout</a>
           </div>
         </div>
-        <div>
-          <h3>derma anda!</h3>
-        </div>
+        <div>tes</div>
       </div>
     </div>
   </div>
