@@ -21,7 +21,36 @@
             <a href="#">Logout</a>
           </div>
         </div>
-        <div>tes</div>
+        <div>
+          <h3>User Registed</h3>
+          <table>
+            <tr>
+              <th>UserId</th>
+              <th>Email</th>
+              <th>WA Phone</th>
+            </tr>
+            <tr>
+              <td>15153</td>
+              <td>adam@gmail.com</td>
+              <td>08994225262</td>
+            </tr>
+            <tr>
+              <td>15153</td>
+              <td>adam@gmail.com</td>
+              <td>08994225262</td>
+            </tr>
+            <tr>
+              <td>15153</td>
+              <td>adam@gmail.com</td>
+              <td>08994225262</td>
+            </tr>
+            <tr>
+              <td>15153</td>
+              <td>adam@gmail.com</td>
+              <td>08994225262</td>
+            </tr>
+          </table>
+        </div>
       </div>
     </div>
   </div>
@@ -39,8 +68,9 @@ header {
 .grid {
   margin-top: -100px;
   display: grid;
-  grid-template-columns: 250px auto;
+  grid-template-columns: 220px auto;
   grid-gap: 10px;
+  color: #333;
 }
 .grid > div {
   padding: 10px;
@@ -79,5 +109,26 @@ header {
   margin-top: 50px;
   background-color: darkorange;
   color: white;
+}
+
+.grid > :nth-child(2) {
+  padding: 25px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 12px;
+}
+table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+table th {
+  border: 1px solid #ddd;
+  color: white;
+  padding: 8px;
+  background-color: darkorange;
 }
 </style>

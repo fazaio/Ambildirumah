@@ -5,7 +5,11 @@
       <img class="image" src="@/assets/img/landing.jpg" alt />
       <div class="carousel-tag">
         <div class="p">
-          <h1>Waktunya Bederma <span style="color: darkorange;">.</span></h1>
+          <h1>
+            {{ response }}
+            Waktunya Bederma
+            <span style="color: darkorange;">.</span>
+          </h1>
           <h3>Ayo berbagi!</h3>
           , Dimasa pandemi sekarang banyak yang membutuhkan loh!, Barangmu
           nganggur? dijual galaku? apa salahnya dibagikan.
@@ -44,7 +48,7 @@
         <div class="card">
           <img src="https://picsum.photos/id/237/150/150" alt />
           <div class="info">
-            <span> <font-awesome-icon icon="user" /> @fazaio </span>
+            <span> <font-awesome-icon icon="user" />@fazaio </span>
             <div class="tittle">Nasi Goreng</div>
             <div class="qty">Jumlah: 14</div>
             <div class="address">JL Pelabuhan Bakayaro ketapanga, Malang</div>
@@ -59,7 +63,7 @@
         <div class="card">
           <img src="https://picsum.photos/id/237/150/150" alt />
           <div class="info">
-            <span> <font-awesome-icon icon="user" /> @fazaio </span>
+            <span> <font-awesome-icon icon="user" />@fazaio </span>
             <div class="tittle">Nasi Goreng</div>
             <div class="qty">Jumlah: 14</div>
             <div class="address">JL Pelabuhan Bakayaro ketapanga, Malang</div>
@@ -80,8 +84,13 @@
 <script>
 import Navbar from '@/components/navbar'
 import foot from '@/components/foot'
+import { mapGetters } from 'vuex'
 
 export default {
+  computed: mapGetters({
+    response: 'modul/res'
+  }),
+  // eslint-disable-next-line vue/order-in-components
   components: {
     Navbar,
     foot
