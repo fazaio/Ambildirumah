@@ -6,7 +6,6 @@
       <div class="carousel-tag">
         <div class="p">
           <h1>
-            {{ response }}
             Waktunya Bederma
             <span style="color: darkorange;">.</span>
           </h1>
@@ -84,12 +83,8 @@
 <script>
 import Navbar from '@/components/navbar'
 import foot from '@/components/foot'
-import { mapGetters } from 'vuex'
 
 export default {
-  computed: mapGetters({
-    response: 'modul/res'
-  }),
   // eslint-disable-next-line vue/order-in-components
   components: {
     Navbar,
