@@ -74,6 +74,16 @@
             </div>
           </div>
         </div>
+        <div class="card">
+          <div v-if="loading">
+            loading
+          </div>
+          {{ debug }}
+          {{ response }}
+          <button class="btn" @click="doChange()">
+            change
+          </button>
+        </div>
       </div>
     </div>
     <foot />
@@ -83,12 +93,28 @@
 <script>
 import Navbar from '@/components/navbar'
 import foot from '@/components/foot'
+import { mapGetters } from 'vuex'
 
 export default {
+  data() {
+    return {
+      debug: ''
+    }
+  },
+  computed: mapGetters({
+    response: 'response/response',
+    loading: 'response/loading'
+  }),
   // eslint-disable-next-line vue/order-in-components
   components: {
     Navbar,
     foot
+  },
+  methods: {
+    doChange() {
+      this.debug = 'do'
+      this.$store.dispatch('response/changeStatus')
+    }
   }
 }
 </script>
