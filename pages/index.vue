@@ -78,7 +78,7 @@
           <div v-if="loading">
             loading
           </div>
-          {{ debug }}
+          {{ data }}
           {{ response }}
           <button class="btn" @click="doChange()">
             change
@@ -103,7 +103,8 @@ export default {
   },
   computed: mapGetters({
     response: 'response/response',
-    loading: 'response/loading'
+    loading: 'response/loading',
+    data: 'derma/data'
   }),
   // eslint-disable-next-line vue/order-in-components
   components: {
@@ -112,8 +113,7 @@ export default {
   },
   methods: {
     doChange() {
-      this.debug = 'do'
-      this.$store.dispatch('response/changeStatus')
+      this.$store.dispatch('derma/getData')
     }
   }
 }

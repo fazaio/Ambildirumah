@@ -1,5 +1,5 @@
 export const state = () => ({
-  response: 'tes',
+  response: '',
   loading: false
 })
 
@@ -11,11 +11,8 @@ export const actions = {
 }
 
 export const mutations = {
-  success(state) {
-    state.response = 'sucess'
-  },
-  failed(state) {
-    state.response = 'failed'
+  response(state, payload) {
+    state.response = payload
   },
   loading(state, payload) {
     state.loading = payload

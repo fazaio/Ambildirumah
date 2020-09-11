@@ -1,5 +1,5 @@
 export default {
-  todos(state) {
-    return state.list
+  data(state) {
+    return state.data
   }
 }
