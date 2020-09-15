@@ -43,8 +43,16 @@
           </div>
         </div>
       </div>
+      <div v-if="derma" style="text-align: center; color: #888;">Loading</div>
       <div class="row responsive">
-        <feedCard tittle="tes" address="tes" qty="2" />
+        <feedCard
+          v-for="derma in data"
+          :key="derma.id"
+          :tittle="derma.description"
+          :qty="derma.quantity"
+          :address="derma.location"
+          :image="derma.image"
+        />
       </div>
     </div>
     <foot />

@@ -1,6 +1,6 @@
 <template>
   <div class="card">
-    <img src="https://picsum.photos/id/237/150/150" alt />
+    <img :src="image" alt />
     <div class="info">
       <span>
         <font-awesome-icon icon="user" />
@@ -34,8 +34,17 @@ export default {
     address: {
       type: String,
       required: true
+    },
+    image: {
+      type: String,
+      required: true
     }
   }
+  // data() {
+  //   return {
+  //     image: 'https://picsum.photos/id/237/150/150'
+  //   }
+  // }
 }
 </script>
 
@@ -58,6 +67,9 @@ export default {
   border-bottom-left-radius: 5px;
   z-index: 1;
   background-color: #ffe3c7;
+  background-size: cover;
+  width: 100%;
+  height: 150px;
 }
 .card > .info {
   padding: 10px;
