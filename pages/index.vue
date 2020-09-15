@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Navbar />
+    <navs />
     <div class="carousel">
       <img class="image" src="@/assets/img/landing.jpg" alt />
       <div class="carousel-tag">
@@ -44,46 +44,7 @@
         </div>
       </div>
       <div class="row responsive">
-        <div class="card">
-          <img src="https://picsum.photos/id/237/150/150" alt />
-          <div class="info">
-            <span> <font-awesome-icon icon="user" />@fazaio </span>
-            <div class="tittle">Nasi Goreng</div>
-            <div class="qty">Jumlah: 14</div>
-            <div class="address">JL Pelabuhan Bakayaro ketapanga, Malang</div>
-            <div class="footer">
-              <button class="btn">
-                <font-awesome-icon :icon="['far', 'heart']" />
-              </button>
-              <button class="btn">Ambil</button>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <img src="https://picsum.photos/id/237/150/150" alt />
-          <div class="info">
-            <span> <font-awesome-icon icon="user" />@fazaio </span>
-            <div class="tittle">Nasi Goreng</div>
-            <div class="qty">Jumlah: 14</div>
-            <div class="address">JL Pelabuhan Bakayaro ketapanga, Malang</div>
-            <div class="footer">
-              <button class="btn">
-                <font-awesome-icon :icon="['far', 'heart']" />
-              </button>
-              <button class="btn">Ambil</button>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div v-if="loading">
-            loading
-          </div>
-          {{ data }}
-          {{ response }}
-          <button class="btn" @click="doChange()">
-            change
-          </button>
-        </div>
+        <feedCard tittle="tes" address="tes" qty="2" />
       </div>
     </div>
     <foot />
@@ -91,8 +52,9 @@
 </template>
 
 <script>
-import Navbar from '@/components/navbar'
+import navs from '@/components/navbar'
 import foot from '@/components/foot'
+import feedCard from '@/components/feedCard'
 import { mapGetters } from 'vuex'
 
 export default {
@@ -108,11 +70,15 @@ export default {
   }),
   // eslint-disable-next-line vue/order-in-components
   components: {
-    Navbar,
-    foot
+    navs,
+    foot,
+    feedCard
+  },
+  created() {
+    this.doGetData()
   },
   methods: {
-    doChange() {
+    doGetData() {
       this.$store.dispatch('derma/getData')
     }
   }
@@ -165,64 +131,6 @@ export default {
   border-radius: 5px;
   background-color: #fff;
   width: 800px;
-}
-
-/* card css */
-.card {
-  padding: 0px;
-  margin: 10px 0px;
-  background-color: #fff;
-  color: #888;
-  box-shadow: 0 10px 40px -10px rgba(0, 64, 128, 0.2);
-  display: grid;
-  grid-template-columns: 150px auto;
-  grid-gap: 0px;
-  border-radius: 5px;
-}
-
-.card > img {
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  z-index: 1;
-  background-color: #ffe3c7;
-}
-.card > .info {
-  padding: 10px;
-  position: relative;
-}
-.card > .info > span {
-  position: absolute;
-  bottom: 6px;
-  font-size: 12px;
-}
-.card > .info > .tittle {
-  color: #444;
-  font-size: 15px;
-  font-weight: bold;
-}
-.card > .info > .qty {
-  padding: 5px 0px;
-  font-size: 13px;
-}
-.card > .info > .address {
-  /* position: absolute; */
-  padding: 5px 0px;
-  font-size: 12px;
-  /* bottom: 0px; */
-}
-.card > .info > .footer {
-  position: absolute;
-  bottom: 6px;
-  right: 6px;
-  /* padding: 10px 0px; */
-  text-align: right;
-  font-size: 13px;
-  border-bottom-right-radius: 5px;
-}
-
-.card > .info > .footer > :first-child {
-  background-color: #fff;
-  color: darkorange;
 }
 
 /* coloumn css */
