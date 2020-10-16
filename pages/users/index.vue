@@ -3,23 +3,67 @@
     <div class="row">
       <div>animasi</div>
       <div>
-        <div class="form">
-          <h3 class="orange">Selamat datang</h3>
-          <span>
-            Silahkan login menggunakan
-            <br />nomor <b style="color: #4ac959;">Whatsapp</b> terlebih dahulu
-            sebelum melanjutkan!
-          </span>
-          <input type="text" placeholder="+62" />
-          <div class="left">
-            <button class="btn">masuk</button>
+        <div v-if="login" id="login">
+          <div class="form">
+            <h3 class="orange">Login</h3>
+            <span>
+              Selamat datang kembali.
+            </span>
+            <div class="input">
+              <input type="text" name="email" placeholder="email" />
+            </div>
+            <div class="input">
+              <input type="password" name="password" placeholder="password" />
+            </div>
+            <div class="left">
+              <button class="btn">masuk</button>
+            </div>
+          </div>
+          <div class="center">
+            Belum punya akun?
+            <span class="orange">
+              <a href="#" @click="login = false"><i>Daftar disini.</i></a>
+            </span>
           </div>
         </div>
-        <div class="center">
-          Belum punya akun?
-          <span class="orange">
-            <nuxt-link to="/">Register disini.</nuxt-link>
-          </span>
+        <div v-else id="daftar">
+          <div class="form">
+            <div style="text-align: center;">
+              <h3 class="orange">Daftar Akun</h3>
+            </div>
+            <span>
+              <!-- Sekecil apapun hal baik pasti akan menular. -->
+            </span>
+            <div class="input">
+              <span><font-awesome-icon icon="envelope" /> <b>Email:</b></span>
+              <input type="text" name="email" placeholder="email" />
+            </div>
+            <div class="input">
+              <span><font-awesome-icon icon="key" /> <b>Password</b></span>
+              <input
+                type="password"
+                name="password"
+                placeholder="Minimal 8 huruf / angka"
+              />
+            </div>
+            <div class="input">
+              <span><b>Konfirmasi Password.</b></span>
+              <input
+                type="password"
+                name="password"
+                placeholder="Di isi sama dengan password"
+              />
+            </div>
+            <div class="left">
+              <button class="btn">masuk</button>
+            </div>
+          </div>
+          <div class="center">
+            Sudah punya akun?
+            <span class="orange">
+              <a href="#" @click="login = true"><i>Login disini.</i></a>
+            </span>
+          </div>
         </div>
       </div>
     </div>
@@ -27,7 +71,13 @@
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      login: true
+    }
+  }
+}
 </script>
 <style scoped>
 .row {
@@ -37,18 +87,16 @@ export default {}
 }
 .form {
   text-align: left;
-  padding: 20px 10px;
+  padding: 20px 15px;
   border-radius: 5px;
   /* background-color: #333; */
   box-shadow: 0 10px 40px -10px rgba(0, 64, 128, 0.2);
 }
-.form > span {
+.form span {
   font-size: 12px;
   display: block;
   padding: 5px 0px;
-  margin: 5px 0px;
   color: #666;
-  margin-bottom: 30px;
   line-height: 18px;
 }
 .left {
@@ -64,5 +112,8 @@ export default {}
 .btn {
   padding: 8px 10px;
   border-radius: 5px;
+}
+.input {
+  padding: 10px 0px;
 }
 </style>

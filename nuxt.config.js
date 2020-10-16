@@ -58,7 +58,7 @@ export default {
    */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios',
+    ['@nuxtjs/axios'],
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt/content
     '@nuxt/content',
@@ -79,6 +79,24 @@ export default {
             icons: ['far']
           }
         ]
+      }
+    ],
+    [
+      '@nuxtjs/firebase',
+      {
+        config: {
+          apiKey: '<apiKey>',
+          authDomain: '<authDomain>',
+          databaseURL: '<databaseURL>',
+          projectId: '<projectId>',
+          storageBucket: '<storageBucket>',
+          messagingSenderId: '<messagingSenderId>',
+          appId: '<appId>',
+          measurementId: '<measurementId>'
+        },
+        services: {
+          auth: true // Just as example. Can be any other service.
+        }
       }
     ]
   ],

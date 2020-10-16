@@ -25,7 +25,8 @@ export default {
   props: {
     tittle: {
       type: String,
-      required: true
+      required: true,
+      default: 'loading'
     },
     qty: {
       type: Number,
@@ -33,7 +34,8 @@ export default {
     },
     address: {
       type: String,
-      required: true
+      required: true,
+      default: 'loading'
     },
     image: {
       type: String,

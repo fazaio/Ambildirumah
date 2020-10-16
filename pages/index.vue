@@ -43,7 +43,7 @@
           </div>
         </div>
       </div>
-      <div v-if="derma" style="text-align: center; color: #888;">Loading</div>
+      <div v-if="data" style="text-align: center; color: #888;">Loading</div>
       <div class="row responsive">
         <feedCard
           v-for="derma in data"
